@@ -1,0 +1,49 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "A page that convey my work and showcase some of my project for future preferences",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "bootstrap": "^4.5.3",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "googleapis": "^65.0.0",
+    "helmet": "^4.2.0",
+    "http": "0.0.1-security",
+    "jquery": "^3.5.1",
+    "mongodb": "^3.6.3",
+    "nodemailer": "^6.4.16",
+    "nodemailer-mailgun-transport": "^2.0.2",
+    "popper.js": "^1.16.1",
+    "pug": "^3.0.0"
+  },
+  "engines": {
+    "node": "4.4.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/larrick12/portfolio.git"
+  },
+  "keywords": [
+    "portfolio",
+    "larrick",
+    "larrick12",
+    "project",
+    "profile"
+  ],
+  "author": "olawale olanrewaju (Larrick)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/larrick12/profile/issues"
+  },
+  "homepage": "https://github.com/larrick12/portfolio/views",
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "gh-pages": "^3.1.0"
+  }
+}

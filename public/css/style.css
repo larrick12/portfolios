@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+body{
+    padding: 0;
+    margin: 0;
+    background: #f4f4f4;
+}
+
+html,h1,h2,h3,h4,h5,h6,a{
+    font-family: "Raleway";
+}
+
+.navbar{
+   background-color: rgb(252, 66, 66);
+}
+.nav-link, .navbar-brand{
+    cursor: pointer;
+    color: #f4f4f4;
+}
+.nav-link{
+    margin-right: 1em !important;
+}
+.nav-link:hover{
+    background: #f4f4f4;
+    color: #f97300;
+}
+.navbar-collapse{
+    justify-content: flex-end;
+}
+.navbar-toggler{
+    background: #fff !important;
+}
+
+.navbar .navbar-brand img{
+    width: 50%;
+    height: auto;
+    position: relative;
+}
+
+.navbar .navbar-brand {
+    width: 30%
+}
+
+.header{
+    position: relative;
+    background-image: url('../imgs/headerback.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+
+}
+
+.overlay{
+    position: absolute;
+    min-width: 100%;
+    min-height:100%;
+    left: 0;
+    top: 0;
+    background: #e1dcdcbe;
+}
+
+.welcome{
+    position: absolute;
+    top: 15%;
+    right:0;
+    padding: 0.5em;
+    z-index: 999;
+    background-color: rgba(13, 220, 13, 0.933);
+    color: white;
+    max-width: 100%;
+    font-family: 'Raleway';
+    font-weight: bold;
+}
+
+.description{
+    position: absolute;
+    top: 22%;
+    left: 8%;
+    margin: auto;
+    padding: 2em;
+}
+
+.description h1{
+    color:#F97300 ;
+    font-weight: 600;
+}
+.description p{
+	color:#666;
+	font-size: 20px;
+	width: 70%;
+    line-height: 1.5;
+}
+
+.description button{
+	border:1px  solid #F97300;
+	background:#F97300;
+	color:#fff;
+}
+/* about styles */
+.about{
+    margin: 4em 0;
+    position: relative;
+    padding: 1em;
+}
+.about img{
+    width: 100%;
+    height: auto;
+}
+.about h1{
+    margin: 2em;
+    color: #f97300;
+    font-weight: bold;
+}
+.about span{
+    display: flex;
+    justify-content: center;
+    color: #888;
+    margin: 1em;
+}
+.about .desc{
+    padding: 2em;
+    border-left: 4px solid #10828c;
+}
+.about .desc h3{
+    color: #10828c;
+}
+.about .desc p{
+    line-height: 2;
+    color: #888
+}
+
+#msg{
+    display: none;
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    background-color: rgba(80, 255, 80, 0.693);
+    border-radius: 5px;
+    width: 400px;
+    height: 200px;
+    transform: translate(-50% -50%);
+    justify-content: space-evenly;
+    z-index: 999;
+
+}
+
+/* portfolio styles */
+.portfolio{
+    position: relative;
+    margin: 4em 0;
+}
+
+.portfolio h1{
+    margin: 1.5em;
+    color: #f97300;
+    font-weight: bold;
+}
+
+.portfolio img{
+    height: 18rem;
+    width: 100%;
+    position: relative;
+    margin: 1em 0;
+    left:0;
+}
+
+
+/* blog style */
+.blog{
+    margin: 4em 0;
+    position: relative;
+}
+
+.blog h1{
+    color: #f97300;
+    margin: 2em;
+    font-weight: bold;
+}
+.blog .card{
+    box-shadow: 0 0 20px #ccc;
+    margin: 1em 0;
+}
+
+.blog .card img{
+    width: 100%;
+    height: 15em;
+}
+
+@media screen and (max-width: 768px){
+    .team .item img{
+        width: 100%;
+    }
+}
+
+.blog .card-title{
+    color: #f97300;
+}
+
+.blog .card-text{
+    padding: 1em;
+}
+
+.team{
+    margin: 4em 0;
+    position: relative;
+}
+
+.team h1{
+    color: #f97300;
+    margin: 2em;
+    font-weight: bold;
+}
+
+.team .item{
+    margin: 1em 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.team .item img{
+    width: 100%;
+    position: relative;
+}
+
+.team .des{
+    color: #fff;
+    background: #f97300;
+    border-top-right-radius: 95%;
+    transition:.3s ease-in-out;
+    position: absolute;
+
+    text-align: center;
+    width: 89.5%;
+    bottom: 24px;
+}
+
+.team .item:hover .des{
+    height: 100%;
+    border-top-right-radius: 0;
+    position: absolute;
+    padding: 5em;
+    background: #f974007d;
+    width: 89.5%;
+    top: 0;
+}
+
+.contact{
+    margin: 6em 0;
+    position: relative;
+    background: rgba(237, 237, 237, 0.83);
+    background-image: url('../imgs/undraw_contact_us_15o2\ \(1\).svg');
+    background-position: center;
+    background-size: contain;
+    background-attachment: fixed;
+    background-blend-mode: lighten;
+}
+
+.contact h1{
+    color: #f97300;
+    margin: 2em;
+    font-family: bold;
+}
+
+.contact .right{
+    max-width: 700px;
+}
+.form-group:before{
+    content: '*';
+    position: relative;
+    left: 0;
+    top: 0;
+    color: red;
+}
+.contact .right .btn-secondary{
+	background:  #F97300;
+	color: #fff;
+	border:0;
+}
+.contact .right .form-control::placeholder{
+	color: #888;
+	font-size: 16px;
+}

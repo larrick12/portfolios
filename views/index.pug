@@ -1,0 +1,155 @@
+html(lang="en")
+    head
+        //- meta( http-equiv="Content-Security-Policy" content=" style-src 'self' 'https://fonts.googleapis.com';")
+        meta(http-equiv="Content-Type" content="text/html;charset=UTF-8")
+        meta(name="keywords" content="portfolio")
+        meta(http-equiv="X-UA-Compatible" content="ie=edge")
+        meta(name="description" content="Home Page")
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        title Portfolio
+        meta(property="og:type" content="website")
+        meta( property="og:url" content="https://larrick12.github.io/portfolio")
+        meta( property="og:title" content="Portfolio - @Larrick")
+        meta( property="og:description" content="Officail page about me")
+
+        //-    Author Information
+        link( rel="me" href="https://github.com/larrick12" type="text/html")
+        link( rel="me" href="olawaleolanrewaju3@gmail.com")
+        link( rel="me" href="tel:+23408106626528")
+        //- for mobile screen scalable 
+        meta( name="mobile-web-app-capable" content="yes")
+        link( rel="shortcut icon" type="image/x-icon" href="/public/imgs/icon.png")
+        //- css and stylesheet
+        link(rel="stylesheet" href="/css/bootstrap.min.css")
+        link(rel="stylesheet" href="/public/css/style.css")
+    body
+        .welcome Welcome Guest &#x1F60A;
+        nav(class="navbar navbar-expand-lg fixed-top")
+            a(class="navbar-brand" href="#" )#home 
+                img(src='/public/imgs/logohub.png' id='imgs')
+            button(class='navbar-toggler' type='button' data-toggle='collapse' data-target="#navbarContent" arial-controls="navbarContent" arial-expanded='false' arial-label="Toggle navigation")
+                span(class="navbar-toggler-icon") X
+            div(class='collapse navbar-collapse' id='navbarContent')
+                ul(class="navbar-nav mr-4" type="none")
+                    li.nav-item
+                        a(class="nav-link" data-value="about" href='#') About
+                    li.nav-item
+                        a(class="nav-link" data-value='portfolio' href='#') Portfolio
+                    li.nav-item
+                        a(class="nav-link" data-value='blog' href='#') Blog
+                    li.nav-item
+                        a(class="nav-link" data-value='team' href='#') Team
+                    li.nav-item 
+                        a(class="nav-link" data-value='contact' href='#') Contact
+        div(class='header')
+            div.overlay
+            div.container 
+                div.description
+                    h1 Hello, Welcome to my official website
+                        p I'm Larrick a Web developer, Mobile App developer, Graphic Designer (UI/UX), Backend-Developer.
+                        button(class='btn btn-outline-secondary btn-lg') See more
+        div(class="about" id='about')
+            div(class="container")
+                h1.text-center About me
+                .row
+                    div(class="col-lg-4 col-md-4 col-sm-12")
+                        img(src='/public/imgs/face.png' alt='imgs' class='img-fluid rounded-circle')
+                        span.text-justify S.Web Developer
+                    div(class='col-lg-8 col-md-8 col-sm-12 desc')
+                        h3 Larrick
+                        p I'm Larrick a Web developer, Mobile App developer, Graphic Designer (UI/UX), Backend-Developer.
+        div(class='portfolio' id='portfolio')
+            .container
+                h1.text-center Portfolio
+                .row
+                    div(class="col-lg-4 col-md-4 col-sm-12")
+                        a(href='https://larrick12.github.io/covid19' target='blank')
+                            img(src='/public/imgs/covid.png' alt='img1' class='img-fluid')
+                    div(class="col-lg-4 col-md-4 col-sm-12")
+                        a(href='https://larrick12.github.io/markdown' target='blank')
+                            img(src='/public/imgs/markup.png' alt='img1' class='img-fluid')
+                    div(class="col-lg-4 col-md-4 col-sm-12")
+                        a(href='https://larrick12.github.io/choropleth' target='blank')
+                            img(src='/public/imgs/choropleth.png' alt='img1' class='img-fluid')
+                    div(class="col-lg-4 col-md-4 col-sm-12")
+                        a(href='https://larrick12.github.io/scatterplot' target='blank')
+                            img(src='/public/imgs/scatter.png' alt='img1' class='img-fluid')
+                    div(class="col-lg-4 col-md-4 col-sm-12")
+                        a(href='https://larrick12.github.io/calculate' target='blank')
+                            img(src='/public/imgs/cal.png' alt='img1' class='img-fluid')
+                    div(class='col-lg-4 col-md-4 col-sm-12 adder text-center') Add New project
+        div(class='blog' id='blog')
+            .container
+                h1.text-center Blog
+                .row
+                    div(class='col-lg-4 col-md-4 col-sm-12')
+                        .card
+                            .card-img
+                                img(src='/public/imgs/face.png' alt='' class='img-fluid')
+                            .card-body
+                                h3.card-title Title
+                                p.card-text this is body of the card
+                            .card-footer
+                                a(href='#' class='card-link') Read more
+                    div(class='col-lg-4 col-md-4 col-sm-12')
+                        .card
+                            .card-img
+                                img(src='/public/imgs/face.png' alt='' class='img-fluid')
+                            .card-body
+                                h3.card-title Title
+                                p.card-text this is body of the card
+                            .card-footer
+                                a(href='#' class='card-link') Read more
+                    div(class='col-lg-4 col-md-4 col-sm-12')
+                        .card
+                            .card-img
+                                img(src='/public/imgs/face.png' alt='' class='img-fluid')
+                            .card-body
+                                h3.card-title Title
+                                p.card-text this is body of the card
+                            .card-footer
+                                a(href='#' class='card-link') Read more
+        div(class='team' id='team')
+            .container
+                h1.text-center Team
+                .row
+                    div(class='col-lg-3 col-md-3 col-sm-12 item')
+                        img(src='/public/imgs/face.png' alt='team' class='img-fluid')
+                        .des Larrick
+                        span.text-muted Manager
+                    div(class='col-lg-3 col-md-3 col-sm-12 item')
+                        img(src='/public/imgs/face.png' alt='team' class='img-fluid')
+                        .des Larrick
+                        span.text-muted Front-end Developer
+                    div(class='col-lg-3 col-md-3 col-sm-12 item')
+                        img(src='/public/imgs/face.png' alt='team' class='img-fluid')
+                        .des Larrick
+                        span.text-muted Team Manager
+                    div(class='col-lg-3 col-md-3 col-sm-12 item')
+                        img(src='/public/imgs/face.png' alt='team' class='img-fluid')
+                        .des Larrick
+                        span.text-muted Back-end Developer
+        div(class='contact' id='contact')
+            .container
+                #msg #{msg}
+                form(action='/contact' method='post')
+                    .row
+                        div(class='col-lg-4 col-md-4 col-sm-12')
+                            h1.text-center Get In Touch
+                        div(class='col-lg-8 col-md-8 col-sm-12 right')
+                            p.text-center(style="padding:0.2em; color:red; font-size:12px") Please Note fields with (*) are required.
+                            div(class='form-group')
+                                input(type='text' placeholder='full name' id='clientName' name='username' class='form-control form-control-lg' required)
+                            div(class='form-group')
+                                input(type='text' placeholder='Subject Title' id='subject' name='subject' class='form-control form-control-lg' required)
+                            div(class='form-group')
+                                input(type='text' placeholder='Company name' id='comp' name='company' class='form-control form-control-lg'  required)
+                            div(class='form-group')
+                                input(type='email' id='email' name='email' placeholder='Email' class='form-control form-control-lg'  required)
+                                small(class="emailHelp form-text text-muted")  we'll never share your email with anyone else.
+                            div(class='form-group')
+                                textarea(placeholder="message..." id='mssg' name='message' cols="30" rows="10" class='form-control form-control-lg' required)
+                            input(type='submit' class='btn btn-secondary btn-block' value='Send')
+    script(src="/js/jquery.min.js")
+    script(async, defer, src="/public/js/client.js", nonce=nonce)
