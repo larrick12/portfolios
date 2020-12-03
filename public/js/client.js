@@ -37,7 +37,7 @@ $(document).ready(function(){
         const data = $(this).serialize();
 
         $.post('/contact', data, function(){
-            $('#msg').css({"text-align": "center", "color": "white", "font-weight": "bold"}).html('<h2> Contact sent successfully!</h2>')
+            $('#msg').css({"text-align": "center", "color": "white", "font-weight": "bold"}).html(`<h2> ${msg}</h2>`)
             .append('<p>we will get in touch soon</p>')
             .fadeIn(1500, function(){
                 $('#msg').append('<p>Thank you !</p>')
